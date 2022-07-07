@@ -1,4 +1,4 @@
-# Arquitectura Propuesta para Stratton Oakmont
+# Proposed architecture for Stratton Oakmont
 
 The repository contains the following files
 
