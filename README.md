@@ -19,7 +19,11 @@ locate ourselves in the project
 
     cd .\ProyectoGo\
 
-Finally run the docker with the following command
+Finally you can run the project by running 
+
+    go run main.go
+    
+or run docker with the following command
 
     docker compose up
     
