@@ -14,7 +14,7 @@ import (
 
 func CreateDatabase() (*sql.DB, error) {
 	
-	db, err := sql.Open("mysql",  "root:@tcp(127.0.0.1:3306)/test")
+	db, err := sql.Open("mysql",  "root:@tcp(host.docker.internal:3306)/test")
 	
 	if err != nil {
         panic(err.Error())

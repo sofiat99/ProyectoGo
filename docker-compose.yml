@@ -1,11 +1,13 @@
 version: '2'
 services:
-  mysql:
-    image: mysql:5.7
+
+  proyectogo:
+    build:
+      context: .
     ports:
-        - "3306:3306"
-    environment:
-        MYSQL_ROOT_PASSWORD: 
-        MYSQL_USER: root
-        MYSQL_PASSWORD: 
-        MYSQL_DATABASE: test
+      - "8080:8080"
+    volumes:
+      - ./ProyectoGo:/ProyectoGo
+    command: >
+      sh -c "go run main.go"
+    
